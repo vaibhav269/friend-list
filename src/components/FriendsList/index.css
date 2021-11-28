@@ -1,0 +1,52 @@
+.flist-container{
+  border: 1px solid #ddd;
+  width: 100%;
+}
+.flist-head{
+  background-color: #14A2B8;
+  color: white;
+  font-weight: 700;
+  font-size: 15px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-bar{
+  padding: 10px;
+  width: 100%;
+  border:none;
+  outline: none;
+}
+
+.add-friend-note{
+  border-top : 1px solid #dddddd;
+  padding: 10px;
+  color: green;
+  font-size: 13px;
+}
+
+.pagination{
+  background-color: #6C757D;
+  color:white;
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+}
+
+.pagination-btn{
+  cursor: pointer;
+}
+.disabled{
+  visibility: hidden;
+}
+
+
+
+@media only screen and (min-device-width: 768px){
+  .flist-container{
+    width: 25%;
+  }
+}

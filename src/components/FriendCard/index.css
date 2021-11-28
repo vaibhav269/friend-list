@@ -1,0 +1,37 @@
+.f-card{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-top: 1px solid #dddddd;
+}
+.f-name{
+  font-weight: 600;
+  word-break: break-word;
+}
+.f-info{
+  margin-top: 5px;
+  font-size: 13px;
+  color: #757575;
+}
+
+.icons{
+  width: 35px;
+  display: inline-block;
+  border: 1px solid #dddddd;
+  padding: 5px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.ml-10{
+  margin-left: 10px;
+}
+
+.f-detail{
+  width: 60%;
+}
+
+.f-control{
+  text-align: right;
+  width: 40%;
+}
