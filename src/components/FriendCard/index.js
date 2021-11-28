@@ -1,6 +1,7 @@
 import './index.css';
 import { useState } from 'react'
 import ConfirmationModal from '../ConfirmationModal';
+import { BIN, FAV, FAV_FILLED } from '../constants/imageUrl';
 
 function FriendCard(props){
   const {friend, handleToggleFav, handleRemove} = props
@@ -17,8 +18,8 @@ function FriendCard(props){
         <div className="f-info"> is your friend </div>
       </div>
       <div className="f-control">
-        <img className="icons" src = { friend.isFav? "/favorite-filled.png":"/favorite.png"} onClick={()=>handleToggleFav(friend.id)} alt="Fav"/>
-        <img className="icons ml-10" src = "/bin.png" onClick={handleToggleModal} alt="Remove"/>
+        <img className="icons" src = { friend.isFav? FAV:FAV_FILLED} onClick={()=>handleToggleFav(friend.id)} alt="Fav"/>
+        <img className="icons ml-10" src = {BIN} onClick={handleToggleModal} alt="Remove"/>
       </div>
       {
         showModal &&
