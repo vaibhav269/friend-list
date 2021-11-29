@@ -14,7 +14,7 @@
   margin-top: 10%;
   border: 1px solid #ddd;
   display: inline-block;
-  width: 25%;
+  width: 100%;
   background-color: white;
   opacity: 1;
 }
@@ -50,4 +50,10 @@
 
 .cancel-btn{
   background-color: #DC3444;
+}
+
+@media only screen and (min-device-width: 768px){
+  .modal{
+    width: 25%;
+  }
 }
