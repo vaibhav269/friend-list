@@ -18,7 +18,7 @@ function FriendCard(props){
         <div className="f-info"> is your friend </div>
       </div>
       <div className="f-control">
-        <img className="icons" src = { friend.isFav? FAV:FAV_FILLED} onClick={()=>handleToggleFav(friend.id)} alt="Fav"/>
+        <img className="icons" src = { friend.isFav? FAV_FILLED:FAV} onClick={()=>handleToggleFav(friend.id)} alt="Fav"/>
         <img className="icons ml-10" src = {BIN} onClick={handleToggleModal} alt="Remove"/>
       </div>
       {
